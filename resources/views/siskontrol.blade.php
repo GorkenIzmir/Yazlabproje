@@ -51,7 +51,7 @@
             <div class="navbar-content scroll-div">
                 <ul class="nav pcoded-inner-navbar">
                     <li class="nav-item pcoded-menu-caption">
-                        <label>Kontrol Paneli</label>
+                        <label>Takip</label>
                     </li>
                     <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item">
                         <a href="siskontrol" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Kontrol Paneli</span></a>
@@ -65,6 +65,12 @@
                     </li>
                     <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
                         <a href="sisdanekle" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Danışman Kayıt</span></a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Dönem</label>
+                    </li>
+                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
+                        <a href="donemekle" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Dönem Ekleme</span></a>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
                         <label>Profil</label>
@@ -141,15 +147,6 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5>Öğrenci Durum Takip</h5>
-                                            <label for="exampleFormControlSelect1">Dönem</label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                                <option>Seçiniz</option>
-                                                                <option>2020-2021 Güz</option>
-                                                                <option>2020-2021 Bahar</option>
-                                                                <option>2021-2022 Güz</option>
-                                                                <option>2021-2022 Bahar</option>
-                                                            </select>
-                                                            <a href="{{url("donemekle")}}">Yeni Dönem Ekle</a>
                                         </div>
                                         <div class="card-block table-border-style">
                                             <div class="table-responsive">
@@ -202,15 +199,6 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5>Danışman Durum Takip</h5>
-
-                                            <label for="exampleFormControlSelect1">Dönem</label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                                <option>Seçiniz</option>
-                                                                <option>2020-2021 Güz</option>
-                                                                <option>2020-2021 Bahar</option>
-                                                                <option>2021-2022 Güz</option>
-                                                                <option>2021-2022 Bahar</option>
-                                                            </select>
                                         </div>
                                         <div class="card-block table-border-style">
                                             <div class="table-responsive">

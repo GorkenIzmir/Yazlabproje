@@ -227,6 +227,7 @@
                                                         <td>@fat</td>
                                                         <td>pdf ler</td>
                                                         <td>
+                                                        
                                                         <a href="#!" class="label theme-bg2 text-white f-12">Reddet</a>
                                                         <a href="#!" class="label theme-bg text-white f-12">Onayla</a>
                                                         <a href="acıklama2" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
@@ -263,12 +264,6 @@
 
                             </form>
                         </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Açıklama Ekleyiniz</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" column="200" rows="6" ></textarea>
-            <button type="button" class="btn btn-square btn-dark">Açıklamayı Kaydet</button>
-        </div>
         <div class="col-xl-12">
             <div class="card">
                 <div class="card-header">

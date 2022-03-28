@@ -48,6 +48,8 @@ Route::view('acıklama','acıklama');
 Route::view('acıklama2','acıklama2');
 Route::view('acıklama3','acıklama3');
 Route::view('donemekle','donemekle');
+Route::view('danprojedetay','danprojedetay');
+
 
 
 

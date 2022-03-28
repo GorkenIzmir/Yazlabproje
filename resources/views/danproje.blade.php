@@ -232,7 +232,7 @@
                                                          <td>{{ $val2 ["no"]}}</td>
                                                          <td>{{ $val2 ["baslik"]}}</td>
                                                          <td>
-                                                            <a href="{{url("duzenle/".$akey2)}}" type="submit" class="label theme-bg text-white f-12">İçerigi Gör</a>
+                                                         <a href="{{url("danprojedetay/".$akey2)}}" type="submit" class="label theme-bg text-white f-12">İçerigi Gör</a>
 
                                                          </td>
                                                         <td>
