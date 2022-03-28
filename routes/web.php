@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProjeVt;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\ContactController;
 
 
 /*
@@ -50,9 +52,16 @@ Route::view('acıklama3','acıklama3');
 Route::view('donemekle','donemekle');
 Route::view('danprojedetay','danprojedetay');
 
+Route::view('email-form','email-form');
+Route::view('email','email');
+Route::post('/send-email', [ContactController::class, 'sendEmail']) -> name('send.email');
+Route::get('/send-email-0', [MailController::class, 'sendEmail']);
 
+Route::get('/form', function () {
+    return view('mail-form');
+});
 
-
+Route::post('/send-email', [ContactController::class, 'sendEmail']) -> name('send.email');
 
 Route::get('/ekle', [ProjeVt::class, 'ekleme']);
 
