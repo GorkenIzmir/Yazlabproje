@@ -18,7 +18,7 @@
     <meta name="author" content="CodedThemes"/>
 
      <!-- Favicon icon -->
-  <link rel="icon" href="{{url('images/favicon.ico')}}" type="image/x-icon">
+  <link rel="icon" href="{{url('images/logoo.png')}}" type="image/x-icon">
   <!-- fontawesome icon -->
   <link rel="stylesheet" href="{{url('fonts/fontawesome/css/fontawesome-all.min.css')}}">
   <!-- animation css -->
@@ -44,9 +44,9 @@
             <div class="navbar-brand header-logo">
                 <a href="siskontrol" class="b-brand">
                     <div class="b-bg">
-                        <i class="feather icon-trending-up"></i>
+                    <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
                     </div>
-                     <span class="b-title">KOU</span>
+                     <span class="b-title">Sistem Yöneticisi</span>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>

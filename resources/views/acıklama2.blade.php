@@ -17,14 +17,14 @@
     <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
     <meta name="author" content="CodedThemes"/>
 
-    <!-- Favicon icon -->
-    <link rel="icon" href="{{url('images/logoo.png')}}" type="image/x-icon">
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome-all.min.css">
-    <!-- animation css -->
-    <link rel="stylesheet" href="plugins/animation/css/animate.min.css">
-    <!-- vendor css -->
-    <link rel="stylesheet" href="css/style.css">
+     <!-- Favicon icon -->
+     <link rel="icon" href="{{url('images/logoo.png')}}" type="image/x-icon">
+     <!-- fontawesome icon -->
+     <link rel="stylesheet" href="{{url('fonts/fontawesome/css/fontawesome-all.min.css')}}">
+     <!-- animation css -->
+     <link rel="stylesheet" href="{{url('css/animate.min.css')}}">
+     <!-- vendor css -->
+     <link rel="stylesheet" href="{{url('css/style.css')}}">
 
 </head>
 
@@ -42,39 +42,35 @@
     <nav class="pcoded-navbar">
         <div class="navbar-wrapper">
             <div class="navbar-brand header-logo">
-               <a href="ograna" class="b-brand">
-                <div class="b-bg">
-                <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
-                </div>
-                   <span class="b-title">Öğrenci</span>
+               <a href="dananasay" class="b-brand">
+                   <div class="b-bg">
+                   <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
+                   </div>
+                   <span class="b-title">Açıklama Sayfası</span>
                </a>
                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
            </div>
             <div class="navbar-content scroll-div">
-                <ul class="nav pcoded-inner-navbar">
+            <ul class="nav pcoded-inner-navbar">
                     <li class="nav-item pcoded-menu-caption">
-                        <label>Öğrenci Profili</label>
+                        <label>Başvurular</label>
                     </li>
                     <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item">
-                        <a href="ogrprofil" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Öğrenci Bilgileri</span></a>
-                        <li class="nav-item pcoded-menu-caption">
-                            <label>Danışmana Sor</label>
-                        </li>
-                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item">
-                        <a href="ogrproje" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Proje Öner</span></a>
+                        <a href="danproje" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Proje Önerileri</span></a>
                     </li>
                     <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item">
-                        <a href="ogrrapor" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Rapor Öner</span></a>
+                        <a href="danrapor" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Rapor Önerileri</span></a>
                     </li>
                     <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item">
-                        <a href="ogrtez" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Tez Öner</span></a>
+                        <a href="dantez" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Tez Önerileri</span></a>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
-                        <label>Başvurularım</label>
+                        <label>Öğrenci Listesi</label>
                     </li>
-                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item">
-                        <a href="ogrbasvurular" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-plus"></i></span><span class="pcoded-mtext">Öğrenci Başvurular</span></a>
+                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
+                        <a href="danogrlist" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Liste</span></a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -84,9 +80,9 @@
         <div class="m-header">
             <a class="mobile-menu" id="mobile-collapse1" href="javascript:"><span></span></a>
             <a href="danbasvurular" class="b-brand">
-                <div class="b-bg">
-                    <i class="feather icon-trending-up"></i>
-                </div>
+                   <div class="b-bg">
+                       <i class="feather icon-trending-up"></i>
+                   </div>
                    <span class="b-title">Datta Able</span>
                </a>
         </div>
@@ -103,13 +99,13 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="images/user/avatar-2.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span>{{ session()->get('ogr')->ad.' '.session()->get('ogr')->soyad }}</span>
-                                <a href="ogrcikis" class="dud-logout" title="Çıkış">
+                                <span>{{ session()->get('dan')->ad.' '.session()->get('dan')->soyad }}</span>
+                                <a href="dancikis" class="dud-logout" title="Çıkış">
                                     <i class="feather icon-log-out"></i>
                                 </a>
                             </div>
                             <ul class="pro-body">
-                                <li><a href="ogrprofil" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+                                <li><a href="danprofil" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
 
                             </ul>
                         </div>
@@ -118,8 +114,8 @@
             </ul>
         </div>
     </header>
-     <!-- [ Main Content ] start -->
- !<div class="pcoded-main-container">
+ <!-- [ Main Content ] start -->
+ <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
         <div class="pcoded-content">
             <div class="pcoded-inner-content">
@@ -129,11 +125,10 @@
                         <div class="row align-items-center">
                             <div class="col-md-12">
                                 <div class="page-header-title">
-                                    <h5 class="m-b-10">Hoşgeldiniz</h5>
+                                    <h5 class="m-b-10">Açıklama Ekleme</h5>
                                 </div>
                                 <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="ograna"><i class="feather icon-home"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:">Tez Öner</a></li>
+                                    <li class="breadcrumb-item"><a href="dananasay"><i class="feather icon-home"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -146,42 +141,45 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card">
-                                    <div class="card-body">
-                                        <h5>Tez Dosyası</h5>
-                                        <hr>
-                                        <form action="gonder.php" method="POST" enctype="multipart/form-data">
-                                            <div style="padding:10px">
-                                              <label for="dosya">Yüklenecek PDF dosyayı seçiniz:</label>
-                                              <br>
-                                              <input type="file" class="btn btn-square btn-light" name="dosya"  accept=".pdf">
-                                              <button type="button" class="btn btn-square btn-dark">Dosyayı Kaydet</button>
-                                            </div>
-                                            <div style="padding:10px">
-                                                <label for="dosya">Yüklenecek WORD dosyayı seçiniz:</label>
-                                                <br>
-                                                <input type="file" class="btn btn-square btn-light" name="dosya"  accept=".docx,">
-                                                <button type="button" class="btn btn-square btn-dark">Dosyayı Kaydet</button>
-                                              </div>
-
-                                          </form>
-                                        <hr>
-                                        <div class="col-sm-12">
-                                            <div class="card">
-                                                <button type="button" class="btn btn-outline-primary" title="Tezi Öner" data-toggle="tooltip">Tez Öner</button>
-                                            </div>
+                                    <div class="card-header">
+                                    <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="mb-4">
+                                            <form id="addCustomer"  class="form-group" method="POST" action="" >
+                                                @csrf <!-- {{ csrf_field() }} -->
                                         </div>
-                                </div>
+                                        <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Açıklama Ekleyiniz</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" column="200" rows="6" ></textarea>
+                                        <button type="button" class="btn btn-square btn-dark">Açıklamayı Kaydet</button>
+                                        </div>
 
+                                    </div>
+                                     </div>
+                                    </div>
+                                    <div class="card-block">
+                                        <p>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- [ Main Content ] end -->
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </div>
-  <!-- Required Js -->
-  <script src="{{url('js/pcoded.min.js')}}"></script>
-  <script src="{{url('js/vendor-all.min.js')}}"></script>
-  <script src="{{url('plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+   <!-- Required Js -->
+   <script src="{{url('js/pcoded.min.js')}}"></script>
+   <script src="{{url('js/vendor-all.min.js')}}"></script>
+   <script src="{{url('plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+
+</body>
+</html>
 
 
+
+         
+        

@@ -44,6 +44,11 @@ Route::view('sisdanekle','sisdanekle')->middleware("Yonlogin");
 Route::view('sisprofile','sisprofile')->middleware("Yonlogin");
 Route::view('sisdandzn','sisdandzn')->middleware("Yonlogin");
 
+Route::view('acıklama','acıklama');
+Route::view('acıklama2','acıklama2');
+Route::view('acıklama3','acıklama3');
+Route::view('donemekle','donemekle');
+
 
 
 

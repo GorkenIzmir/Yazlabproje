@@ -46,7 +46,7 @@
                    <div class="b-bg">
                    <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
                    </div>
-                   <span class="b-title">Ana Sayfa</span>
+                   <span class="b-title">Danışman</span>
                </a>
                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
            </div>
@@ -226,7 +226,10 @@
                                                         <td>Thornton</td>
                                                         <td>@fat</td>
                                                         <td>pdf ler</td>
-                                                        <td><a href="#!" class="label theme-bg2 text-white f-12">Reddet</a><a href="#!" class="label theme-bg text-white f-12">Onayla</a><a href="#!" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
+                                                        <td>
+                                                        <a href="#!" class="label theme-bg2 text-white f-12">Reddet</a>
+                                                        <a href="#!" class="label theme-bg text-white f-12">Onayla</a>
+                                                        <a href="acıklama2" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td><img class="rounded-circle" style="width:40px;" src="images/user/avatar-2.jpg" alt="activity-user"></td>
@@ -235,7 +238,7 @@
                                                         <td>Otto</td>
                                                         <td>@mdo</td>
                                                         <td>pdf ler</td>
-                                                        <td><a href="#!" class="label theme-bg2 text-white f-12">Reddet</a><a href="#!" class="label theme-bg text-white f-12">Onayla</a><a href="#!" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
+                                                        <td><a href="#!" class="label theme-bg2 text-white f-12">Reddet</a><a href="#!" class="label theme-bg text-white f-12">Onayla</a><a href="acıklama" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
                                                     </tr>
                                                     <tr>
 
@@ -245,7 +248,7 @@
                                                         <td>Thornton</td>
                                                         <td>@fat</td>
                                                         <td>pdf ler</td>
-                                                        <td><a href="#!" class="label theme-bg2 text-white f-12">Reddet</a><a href="#!" class="label theme-bg text-white f-12">Onayla</a><a href="#!" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
+                                                        <td><a href="#!" class="label theme-bg2 text-white f-12">Reddet</a><a href="#!" class="label theme-bg text-white f-12">Onayla</a><a href="acıklama" class="label theme-bg text-white f-12">Açıklama Yap</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>

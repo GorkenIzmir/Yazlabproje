@@ -46,7 +46,7 @@
                    <div class="b-bg">
                     <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
                    </div>
-                   <span class="b-title">Ana Sayfa</span>
+                   <span class="b-title">Danışman</span>
                </a>
                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
            </div>
@@ -240,7 +240,7 @@
 
                                                          </td>
                                                          <td>
-                                                            <a href="{{url("duzenle/".$akey2)}}" type="submit" class="label theme-bg text-white f-12">Açıklama</a>
+                                                         <a href="{{url("acıklama/".$akey2)}}" type="submit" class="label theme-bg text-white f-12">Açıklama</a>
 
                                                          </td>
 
@@ -268,12 +268,6 @@
 
                             </form>
                         </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Açıklama Ekleyiniz</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" column="200" rows="6" ></textarea>
-            <button type="button" class="btn btn-square btn-dark">Açıklamayı Kaydet</button>
-        </div>
         <div class="col-xl-12">
             <div class="card">
                 <div class="card-header">

@@ -18,7 +18,7 @@
     <meta name="author" content="CodedThemes"/>
 
   <!-- Favicon icon -->
-  <link rel="icon" href="{{url('images/favicon.ico')}}" type="image/x-icon">
+  <link rel="icon" href="{{url('images/logoo.png')}}" type="image/x-icon">
   <!-- fontawesome icon -->
   <link rel="stylesheet" href="{{url('fonts/fontawesome/css/fontawesome-all.min.css')}}">
   <!-- animation css -->
@@ -42,9 +42,9 @@
             <div class="navbar-brand header-logo">
                 <a href="siskontrol" class="b-brand">
                     <div class="b-bg">
-                        <i class="feather icon-trending-up"></i>
+                    <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
                     </div>
-                     <span class="b-title">KOU</span>
+                     <span class="b-title">Sistem Yöneticisi</span>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>
@@ -141,7 +141,6 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5>Öğrenci Durum Takip</h5>
-
                                             <label for="exampleFormControlSelect1">Dönem</label>
                                                             <select class="form-control" id="exampleFormControlSelect1">
                                                                 <option>Seçiniz</option>
@@ -150,6 +149,7 @@
                                                                 <option>2021-2022 Güz</option>
                                                                 <option>2021-2022 Bahar</option>
                                                             </select>
+                                                            <a href="{{url("donemekle")}}">Yeni Dönem Ekle</a>
                                         </div>
                                         <div class="card-block table-border-style">
                                             <div class="table-responsive">
@@ -174,7 +174,7 @@
                                                             <td>{{ $val ['soyad']}}</td>
                                                              <td>{{ $val ["no"]}}</td>
                                                             <td>
-                                                                <a href="{{url("onayla/".$akey)}}" type="submit" class="label theme-bg text-white f-12">Düzenle</a>
+                                                            <a href="{{url("onayla/".$akey)}}" type="submit" class="label theme-bg text-white f-12">Düzenle</a>
 
                                                              </td>
                                                              <td>   <a href="{{url("sil/$akey")}}" type="submit" class="label theme-bg2 text-white f-12">Sil</a>

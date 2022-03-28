@@ -45,7 +45,7 @@
                 <div class="b-bg">
                 <i ><img src="{{url('images/logoo.png')}}" width="50px" height="50px"></i>
                 </div>
-                   <span class="b-title">Ana Sayfa</span>
+                   <span class="b-title">Öğrenci</span>
                </a>
                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
            </div>
@@ -185,7 +185,7 @@
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <div class="card">
-                                                            <button type="submit" class="btn btn-outline-primary" title="Projeyi Öner" data-toggle="tooltip">Projeyi Öner</button>
+                                                        <button type="submit" class="btn btn-outline-primary" title="Projeyi Öner" data-toggle="tooltip">Projeyi Öner</button>
                                                         </div>
                                                     </div>
                                                 </div>

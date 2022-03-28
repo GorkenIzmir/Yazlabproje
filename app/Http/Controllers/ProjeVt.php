@@ -119,12 +119,11 @@ class ProjeVt extends Controller
               "sinif" => "required",
               "fak" => "required",
               "bolum" => "required",
-              "tel" => "required",
-              "sifre" => "required"
+              "tel" => "required"
           ]);
           Ogrenci::where('id',$request->id)->update(["ad"=>$request->ad,"soyad"=>$request->soyad,"no"=>$request->no,
           "eposta"=>$request->eposta,
-          Hash::make($request->sifre),"sinif"=>$request->sinif,
+         "sinif"=>$request->sinif,
           "bolum"=>$request->bolum,"fak"=>$request->fak,"tel"=>$request->tel]);
            return redirect()->route('admin.home');
 
