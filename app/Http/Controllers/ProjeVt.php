@@ -9,7 +9,8 @@ use App\Models\Proje;
 use App\Models\Yonetici;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 
 
@@ -152,6 +153,10 @@ class ProjeVt extends Controller
         "sifre"=>Hash::make($request->ogrsifre),"sinif"=>$request->ogrsinif,
         "bolum"=>$request->ogrbolum,"fak"=>$request->ogrfak,"tel"=>$request->ogrtel]);
 
+        $sifre=$request->ogrsifre;
+        $mail=$request->ogrmail;
+        Mail::to($mail) -> send(new ContactMail($sifre));
+
         return redirect('sisogrekle');
 
 
@@ -162,6 +167,10 @@ class ProjeVt extends Controller
         (["ad"=>$request->ad,"soyad"=>$request->soyad,
         "eposta"=>$request->eposta, "sifre"=>Hash::make($request->sifre),
        "unvan"=>$request->unvan, "sicilno"=>$request->sicilno]);
+
+       $sifre=$request->sifre;
+       $mail=$request->eposta;
+       Mail::to($mail) -> send(new ContactMail($sifre));
 
         return redirect('sisdanekle');
 
@@ -180,6 +189,7 @@ class ProjeVt extends Controller
 
 
     }
+   
 
         public function ogrgiris(Request $request)
         {

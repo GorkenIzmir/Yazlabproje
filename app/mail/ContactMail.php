@@ -16,9 +16,9 @@ class ContactMail extends Mailable
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($sifre)
     {
-        $this -> data = $data;
+        $this -> sifre = $sifre;
     }
 
     /**
@@ -31,6 +31,6 @@ class ContactMail extends Mailable
         return $this->view('email')
                     ->subject('A new contact mail')
                     ->from('yazlab2.pts@gmail.com', 'System')
-                    ->with('data', $this->data);
+                    ->with('sifre', $this->sifre);
     }
 }
