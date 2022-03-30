@@ -100,4 +100,6 @@ Route::get('/listele', [ProjeVt::class, 'listele']);
 Route::post('sisdanekle',[ProjeVt::class,'danekle']);
 Route::post('sisogrekle',[ProjeVt::class,'ogrekle']);
 
+Route::post('sifre',[ProjeVt::class,'sifredegis']);
+
 Route::post('ogrproje',[ProjeVt::class,'ogrprojekle']);

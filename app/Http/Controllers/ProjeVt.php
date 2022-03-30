@@ -167,15 +167,25 @@ class ProjeVt extends Controller
         (["ad"=>$request->ad,"soyad"=>$request->soyad,
         "eposta"=>$request->eposta, "sifre"=>Hash::make($request->sifre),
        "unvan"=>$request->unvan, "sicilno"=>$request->sicilno]);
-
+       $sicilno=$request->sicilno;
        $sifre=$request->sifre;
        $mail=$request->eposta;
-       Mail::to($mail) -> send(new ContactMail($sifre));
+       Mail::to($mail) -> send(new ContactMail($sifre,$sicilno));
 
-        return redirect('sisdanekle');
+       return redirect('sisdanekle');
 
 
     }
+
+    public function sifredegis(Request $request)
+    {
+        $sifre=rand(10000,50000);
+        $mail=$request->mail;
+        Mail::to($mail) -> send(new ContactMail($sifre));
+
+        return redirect('sifre');
+    }
+
     public function ogrprojekle(Request $request)
     {
         Proje::create

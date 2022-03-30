@@ -1,4 +1,4 @@
 <p>
-  Merhaba, Kaydınız oluşturuldu. <br>
-  <strong> Şifreniz;</strong> <em>{{$sifre}}</em>
+  Merhaba, Şifreniz oluşturuldu. <br>
+  <strong> Şifreniz;</strong> <em>{{$sifre,$sicilno}}</em>
 </p>
