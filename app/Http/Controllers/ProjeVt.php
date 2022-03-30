@@ -167,10 +167,12 @@ class ProjeVt extends Controller
         (["ad"=>$request->ad,"soyad"=>$request->soyad,
         "eposta"=>$request->eposta, "sifre"=>Hash::make($request->sifre),
        "unvan"=>$request->unvan, "sicilno"=>$request->sicilno]);
-       $sicilno=$request->sicilno;
-       $sifre=$request->sifre;
+
+       
+      $sifre=$request->sifre;
+      $sicilno=$request->sicilno;
        $mail=$request->eposta;
-       Mail::to($mail) -> send(new ContactMail($sifre,$sicilno));
+       Mail::to($mail) -> send(new ContactMail($sifre));
 
        return redirect('sisdanekle');
 
