@@ -180,7 +180,7 @@ class ProjeVt extends Controller
 
     public function sifredegis(Request $request)
     {
-        $sifre=rand(10000,50000);
+        $sifre=rand(100000,500000);
         $mail=$request->mail;
         Mail::to($mail) -> send(new ContactMail($sifre));
 
