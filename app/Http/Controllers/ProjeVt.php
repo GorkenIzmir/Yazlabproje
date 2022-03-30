@@ -170,7 +170,6 @@ class ProjeVt extends Controller
 
        
       $sifre=$request->sifre;
-      $sicilno=$request->sicilno;
        $mail=$request->eposta;
        Mail::to($mail) -> send(new ContactMail($sifre));
 
